@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='720.00pt' height='405.00pt' viewBox='0 0 720.00 405.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw0MDUuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='405.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0MDUuMDA=)'>
+<polyline points='14.17,47.09 223.69,47.09 ' style='stroke-width: 0.75;' />
+<polyline points='223.69,47.09 240.70,47.09 ' style='stroke-width: 0.75;' />
+<polyline points='240.70,47.09 600.80,47.09 ' style='stroke-width: 0.75;' />
+<polyline points='600.80,47.09 617.81,47.09 ' style='stroke-width: 0.75;' />
+<polyline points='617.81,47.09 705.83,47.09 ' style='stroke-width: 0.75;' />
+<text x='14.17' y='35.35' style='font-size: 13.20px; font-weight: bold; font-family: "Arial";' textLength='209.52px' lengthAdjust='spacingAndGlyphs'>Antimalarials vs Placebo/No drug</text>
+<text x='14.17' y='67.84' style='font-size: 12.00px; font-family: "Arial";' textLength='134.58px' lengthAdjust='spacingAndGlyphs'>SPAQ + Seasonal RTS,S</text>
+<text x='14.17' y='100.76' style='font-size: 12.00px; font-family: "Arial";' textLength='33.33px' lengthAdjust='spacingAndGlyphs'>SPPQ</text>
+<text x='14.17' y='133.67' style='font-size: 12.00px; font-family: "Arial";' textLength='42.67px' lengthAdjust='spacingAndGlyphs'>DHAPQ</text>
+<text x='14.17' y='166.58' style='font-size: 12.00px; font-family: "Arial";' textLength='32.44px' lengthAdjust='spacingAndGlyphs'>SPAQ</text>
+<text x='14.17' y='199.50' style='font-size: 12.00px; font-family: "Arial";' textLength='88.47px' lengthAdjust='spacingAndGlyphs'>Seasonal RTS,S</text>
+<text x='14.17' y='232.41' style='font-size: 12.00px; font-family: "Arial";' textLength='86.67px' lengthAdjust='spacingAndGlyphs'>ASAQ (monthly)</text>
+<text x='14.17' y='265.32' style='font-size: 12.00px; font-family: "Arial";' textLength='110.22px' lengthAdjust='spacingAndGlyphs'>SPAS / SP (monthly)</text>
+<text x='14.17' y='298.24' style='font-size: 12.00px; font-family: "Arial";' textLength='78.47px' lengthAdjust='spacingAndGlyphs'>SP (bimonthly)</text>
+<text x='14.17' y='331.15' style='font-size: 12.00px; font-family: "Arial";' textLength='96.02px' lengthAdjust='spacingAndGlyphs'>ASAQ (bimonthly)</text>
+<text x='617.81' y='35.35' style='font-size: 13.20px; font-weight: bold; font-family: "Arial";' textLength='83.50px' lengthAdjust='spacingAndGlyphs'>IRR [95% CrI]</text>
+<text x='617.81' y='67.84' style='font-size: 12.00px; font-family: "Arial";' textLength='88.02px' lengthAdjust='spacingAndGlyphs'>0.07 (0.05, 0.09)</text>
+<text x='617.81' y='100.76' style='font-size: 12.00px; font-family: "Arial";' textLength='88.02px' lengthAdjust='spacingAndGlyphs'>0.14 (0.04, 0.43)</text>
+<text x='617.81' y='133.67' style='font-size: 12.00px; font-family: "Arial";' textLength='88.02px' lengthAdjust='spacingAndGlyphs'>0.18 (0.15, 0.22)</text>
+<text x='617.81' y='166.58' style='font-size: 12.00px; font-family: "Arial";' textLength='88.02px' lengthAdjust='spacingAndGlyphs'>0.24 (0.22, 0.26)</text>
+<text x='617.81' y='199.50' style='font-size: 12.00px; font-family: "Arial";' textLength='88.02px' lengthAdjust='spacingAndGlyphs'>0.24 (0.20, 0.29)</text>
+<text x='617.81' y='232.41' style='font-size: 12.00px; font-family: "Arial";' textLength='88.02px' lengthAdjust='spacingAndGlyphs'>0.32 (0.25, 0.41)</text>
+<text x='617.81' y='265.32' style='font-size: 12.00px; font-family: "Arial";' textLength='88.02px' lengthAdjust='spacingAndGlyphs'>0.36 (0.30, 0.44)</text>
+<text x='617.81' y='298.24' style='font-size: 12.00px; font-family: "Arial";' textLength='88.02px' lengthAdjust='spacingAndGlyphs'>0.55 (0.45, 0.66)</text>
+<text x='617.81' y='331.15' style='font-size: 12.00px; font-family: "Arial";' textLength='88.02px' lengthAdjust='spacingAndGlyphs'>0.68 (0.54, 0.86)</text>
+<polyline points='533.14,343.31 533.14,47.09 ' style='stroke-width: 0.75; stroke: #D3D3D3;' />
+<polyline points='240.70,343.31 600.80,343.31 ' style='stroke-width: 0.75;' />
+<line x1='240.70' y1='343.31' x2='240.70' y2='349.79' style='stroke-width: 0.75;' />
+<line x1='347.94' y1='343.31' x2='347.94' y2='349.79' style='stroke-width: 0.75;' />
+<line x1='465.47' y1='343.31' x2='465.47' y2='349.79' style='stroke-width: 0.75;' />
+<line x1='533.14' y1='343.31' x2='533.14' y2='349.79' style='stroke-width: 0.75;' />
+<line x1='600.80' y1='343.31' x2='600.80' y2='349.79' style='stroke-width: 0.75;' />
+<text x='240.70' y='366.61' text-anchor='middle' style='font-size: 10.80px; font-family: "Arial";' textLength='21.00px' lengthAdjust='spacingAndGlyphs'>0.05</text>
+<text x='347.94' y='366.61' text-anchor='middle' style='font-size: 10.80px; font-family: "Arial";' textLength='21.00px' lengthAdjust='spacingAndGlyphs'>0.15</text>
+<text x='465.47' y='366.61' text-anchor='middle' style='font-size: 10.80px; font-family: "Arial";' textLength='21.00px' lengthAdjust='spacingAndGlyphs'>0.50</text>
+<text x='533.14' y='366.61' text-anchor='middle' style='font-size: 10.80px; font-family: "Arial";' textLength='21.00px' lengthAdjust='spacingAndGlyphs'>1.00</text>
+<text x='600.80' y='366.61' text-anchor='middle' style='font-size: 10.80px; font-family: "Arial";' textLength='21.00px' lengthAdjust='spacingAndGlyphs'>2.00</text>
+<text x='420.75' y='380.42' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='102.03px' lengthAdjust='spacingAndGlyphs'>Incidence rate ratio</text>
+<polyline points='245.33,63.54 295.16,63.54 ' style='stroke-width: 0.75;' />
+<rect x='268.73' y='61.93' width='3.22' height='3.22' style='stroke-width: 0.75; stroke: #737373; fill: #737373;' />
+<polyline points='240.70,96.46 450.28,96.46 ' style='stroke-width: 0.75;' />
+<polyline points='246.40,93.17 240.70,96.46 246.40,99.75 ' style='stroke-width: 0.75;' />
+<rect x='338.11' y='95.47' width='1.97' height='1.97' style='stroke-width: 0.75; stroke: #737373; fill: #737373;' />
+<polyline points='348.51,129.37 383.37,129.37 ' style='stroke-width: 0.75;' />
+<rect x='363.98' y='127.42' width='3.91' height='3.91' style='stroke-width: 0.75; stroke: #737373; fill: #737373;' />
+<polyline points='387.36,162.28 399.78,162.28 ' style='stroke-width: 0.75;' />
+<rect x='389.55' y='158.26' width='8.05' height='8.05' style='stroke-width: 0.75; stroke: #737373; fill: #737373;' />
+<polyline points='377.01,195.20 413.70,195.20 ' style='stroke-width: 0.75;' />
+<rect x='393.30' y='193.30' width='3.79' height='3.79' style='stroke-width: 0.75; stroke: #737373; fill: #737373;' />
+<polyline points='399.64,228.11 445.43,228.11 ' style='stroke-width: 0.75;' />
+<rect x='420.77' y='226.43' width='3.36' height='3.36' style='stroke-width: 0.75; stroke: #737373; fill: #737373;' />
+<polyline points='415.86,261.02 452.79,261.02 ' style='stroke-width: 0.75;' />
+<rect x='432.43' y='259.13' width='3.78' height='3.78' style='stroke-width: 0.75; stroke: #737373; fill: #737373;' />
+<polyline points='456.21,293.94 492.79,293.94 ' style='stroke-width: 0.75;' />
+<rect x='472.52' y='292.04' width='3.80' height='3.80' style='stroke-width: 0.75; stroke: #737373; fill: #737373;' />
+<polyline points='473.57,326.85 518.22,326.85 ' style='stroke-width: 0.75;' />
+<rect x='494.26' y='325.15' width='3.40' height='3.40' style='stroke-width: 0.75; stroke: #737373; fill: #737373;' />
+</g>
+</g>
+</svg>

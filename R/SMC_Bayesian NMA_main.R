@@ -103,7 +103,7 @@ smc_data_long <- smc_data_long %>%
   ungroup()
 
 # ---------------------------
-# Insert baseline SE for reference arms
+# Insert baseline SE for reference arms for multi-arm studies
 # ---------------------------
 baseline_SE <- tibble(
   studyid = c("Nuwa2025",

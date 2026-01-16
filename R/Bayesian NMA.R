@@ -27,8 +27,8 @@ set.seed(1234)
 # Load data
 # ---------------------------
 
-smc_path <- here("data", "smc_nma_cleaned.csv")
-dot_path <- here("data", "smc_nma_adherence.csv")
+smc_path <- here("data", "smc_nma_cleaned.csv") # Main NMA dataset
+dot_path <- here("data", "smc_nma_adherence.csv") # Adherence covariate
 
 
 smc_data <- read.csv(smc_path, stringsAsFactors = FALSE)

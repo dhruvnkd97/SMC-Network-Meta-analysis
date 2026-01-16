@@ -42,14 +42,14 @@ smc_data <- read.csv(smc_path, stringsAsFactors = FALSE)
 # Combine SPAS and SP (monthly) into a single category
 smc_data <- smc_data %>%
   mutate(
-    trt1 = recode(trt1, "nodrug" = "placebo", .default = trt1),
-    trt2 = recode(trt2, "nodrug" = "placebo", .default = trt2),
+    trt1 = recode(trt1, "nodrug" = "placebo"),
+    trt2 = recode(trt2, "nodrug" = "placebo"),
     
-    trt1 = recode(trt1, "placebo" = "placebo/nodrug", .default = trt1),
-    trt2 = recode(trt2, "placebo" = "placebo/nodrug", .default = trt2),
+    trt1 = recode(trt1, "placebo" = "placebo/nodrug"),
+    trt2 = recode(trt2, "placebo" = "placebo/nodrug"),
     
-    trt1 = recode(trt1, "spas" = "spas/sp_m", "sp_m" = "spas/sp_m", .default = trt1),
-    trt2 = recode(trt2, "spas" = "spas/sp_m", "sp_m" = "spas/sp_m", .default = trt2)
+    trt1 = recode(trt1, "spas" = "spas/sp_m", "sp_m" = "spas/sp_m"),
+    trt2 = recode(trt2, "spas" = "spas/sp_m", "sp_m" = "spas/sp_m")
   )
 
 # ---------------------------
@@ -60,32 +60,38 @@ smc_data <- smc_data %>%
 # where baseline/reference arm rows have diff = NA and std.err = baseline SE
 
 
-smc_data_long <- smc_data %>%
-  transmute(
-    study   = study,
-    studyid = studyid,
-    trt1    = trt1,      
-    trt2    = trt2,      
-    diff    = logte,     
-    std.err = sete
-  ) %>%
-  pivot_longer(
-    cols = c(trt1, trt2),
-    names_to = "arm",
-    values_to = "treatment"
-  ) %>%
-  mutate(
-    diff    = if_else(arm == "trt1", NA_real_, diff),
-    std.err = if_else(arm == "trt1", NA_real_, std.err)
-  ) %>%
-  select(study, studyid, treatment, diff, std.err) %>%
-  arrange(studyid, treatment)
+smc_data_long <- smc_data %>% 
+  pivot_longer( #Reshape from wide to long
+    cols = c("trt1", "trt2", "logte", "sete"), # Select columns to reshape
+    names_to = c(".value"), # Use column name parts as output column names 
+    names_pattern = "(..)"  # Group column names by first two columns (trt1 & trt2 == grouped into treatments)
+  ) %>% 
+  rename( #Rename columns
+    diff = lo,
+    std.err = se,
+    treatment = tr
+  ) %>% 
+  arrange(study)
+    # smc_data_long has data in long format, for each study:
+    # - All possible pairwise comparisons are listed (for a 2-arm study = 1 comparison; 3-arm study = 3 comparisons; 4-arm study = 6 comparisons)
+    # - Each pairwise comparison is represented in 2 rows, the comparator's row values of the logTE (diff) and standard error of TE, the reference arm below has 'NA'
+    # - For GEMTC, each study must have a common reference arm (see handling of multi-arm studies below)
 
 # ---------------------------
-# Multi-arm cleaning (manual row drops)
+# Multi-arm cleaning 
 # ---------------------------
-# Remove redundant pairwise comparisons (i.e. those not with reference arm) //Assuming multiarm studies are internally consistent
-# these indices may no longer correspond to the same comparisons, if data changes so always check dataframe.
+# Multi-arm studies are internally consistent i.e. In a study of A vs B vs C, if we know the effect of A vs B and B vs C, then we can estimate A vs C.
+# - In the current format, smc_data_long all possible pairwise comparisons for multi-arm studies - this is not required!
+# - For multi-arm studies, GEMTC requires pairwise comparisons against a single reference treatment (arbitrarily selected)
+# - In a study of A vs B vs C, if we select C as the reference, we only need to supply A vs C and B vs C
+# - Hence for multi-arm studies below, I select a reference treatment and drop all pairwise comparisons that do not contain this reference
+# - For most multi-arm studies with placebo/nodrug, I (arbitrarily) selected placebo/nodrug and dropped pairwise comparison rows that do not compare against placebo/nodrug in that study.
+# - E.g. for Nuwa 2025, I drop the dp vs spaq comparison (rows 3 and 4) and keep spaq vs placebo/nodrug and dp vs placebo/nodrug
+# - If a study did not have placebo/nodrug (e.g. Kweku 2008), I (arbitrarily) selected another reference arm, and dropped accordingly
+
+
+
+# Note - indices may no longer correspond to the same comparisons, if data changes so always check dataframe using the logic above.
 
 smc_data_long$row_id <- seq_len(nrow(smc_data_long))
 

@@ -1,0 +1,8 @@
+study,studyid,study_rand,trt1,n1,t1,trt2,n2,t2,trt3,n3,t3,trt4,n4,t4
+3,Chandramohan2021,6861,rtss,25,2288,spaq,31,2286,spaq+rtss,10,2287,,,
+7,Cisse2016,106752,spaq,14,83688,nodrug,23,23064,,,,,,
+9,Tine2011,1000,spaq,0,500,nodrug,5,500,,,,,,
+10,Dicko2011,3017,spaq,2,1509,placebo,15,1508,,,,,,
+11,Konate2011,3014,spaq,4,1509,placebo,13,1505,,,,,,
+16,Dicko2008,262,sp,0,131,nodrug,5,131,,,,,,
+17,Kweku2008,2451,sp,19,613,placebo,19,650,asaq_bi,7,562,asaq,7,626

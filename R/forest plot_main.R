@@ -6,7 +6,7 @@ library(svglite)
 
 
 # ---------- 1) Dataset ----------
-nma_forest_main <- read.csv("data", "wa_nma_forest.csv")
+nma_forest_main <- read.csv("forest_main.csv")
 nma_forest_main <- nma_forest_main[order(nma_forest_main$est, na.last = TRUE), ] #Order by effect size
 
 
@@ -25,7 +25,7 @@ boxsz <- if (diff(rng) == 0) {
 }
 
 # ---------- 3) Labels (left/right of the plot) ----------
-labeltext <- rbind(c("Antimalarials vs Placebo/No drug (West Africa)", 
+labeltext <- rbind(c("Antimalarials vs Placebo/No drug", 
                      "IRR [95% CrI]"),
             cbind(Label = nma_forest_main$label,
             `IRR [95% CrI]` = sprintf("%.2f (%.2f, %.2f)", 
@@ -58,7 +58,7 @@ ticks <- ticks_all[ticks_all >= clip_left & ticks_all <= clip_right]
 
 
 # ---------- 6) Draw the forest plot ----------
-svglite("forest_wa.svg", width = 10, height = 5.625) 
+svglite("forest_main.svg", width = 10, height = 5.625) 
 
 forestplot(
   labeltext = labeltext,

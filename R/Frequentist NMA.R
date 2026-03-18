@@ -170,7 +170,9 @@ netsplit_spaq <- netsplit(
   ci = FALSE
 )
 
-netsplit_placebo
+forest(netsplit_placebo)
+
+
 netsplit_spaq
 
 # ------------------------------------------------------------

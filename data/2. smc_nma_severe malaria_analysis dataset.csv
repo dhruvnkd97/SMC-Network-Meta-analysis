@@ -1,0 +1,15 @@
+"studyid","treat1","treat2","logTE","seTE"
+"Chandramohan2021","rtss","spaq",-0.00088888894741651,0.234399110746022
+"Chandramohan2021","rtss","spaq+rtss",1.22406759418534,0.344702382133519
+"Chandramohan2021","spaq","spaq+rtss",1.22495648313276,0.344702955180731
+"Dicko2011","spaq","placebo/nodrug",-2.02423642162957,0.753657766521164
+"Konate2011","spaq","placebo/nodrug",-1.18733039276092,0.572937841338118
+"Cisse2016","spaq","placebo/nodrug",-0.597837,0.274887469
+"Kweku2008","sp","placebo/nodrug",-0.076881044,0.383127375
+"Kweku2008","asaq_bi","placebo/nodrug",0.099845335,0.445954381
+"Kweku2008","asaq","placebo/nodrug",-0.163696093,0.445745462
+"Kweku2008","asaq_bi","sp",0.176726379,0.445954381
+"Kweku2008","asaq","sp",-0.086815048,0.445745462
+"Kweku2008","asaq","asaq_bi",-0.263541428,0.445745462
+"Tine2011","spaq","placebo/nodrug",-1.17669054,0.72935
+"Dicko2008","sp","placebo/nodrug",-1.21623965,0.7385527
